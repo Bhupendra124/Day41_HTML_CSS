@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.header-container{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background:rgb(155, 47, 119);
+    padding: 10px;
+    color: darkblue;
+}
+.main-container{
+    display: flex;
+    flex-flow: column wrap;
+    font-weight: bold;
+    text-align: center;
+
+}
+.footer{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    font-weight: bold;
+    padding: 10px;
+    color:darkcyan;
+    background-color: rgb(25, 184, 144);
+}
+.sidebar-left{
+    order: 1;
+    font-family: cursive;
+    background-color: rgb(3, 17, 2);
+    color: darkcyan;
+    flex:1 0 0;
+    border: 0px;
+
+}
+.sidebar-right{
+    order: 3;
+    color: forestgreen;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+.section{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    font-weight: bold;
+    color: darkgray;
+    background-color: rgb(179, 212, 178);
+}
+.h2{
+    font-display: 2px;
+  
+    color:solid black;
+    font-style: normal;
+    
+}
+p{
+    font-style: italic;
+    padding: 10px;
+}
+article{
+    padding: 10px;
+    margin: 10px;;
+    background:floralwhite;
+}
+
+
+</style>
+<body>
+    <header class="header-container"><h1>Header-Sample Flexbox Example</h1>
+    </header>
+    <sideBar class="sidebar-left"><div class="center"><p>left side Bar</p></div></sideBar>
+    <div class="main-container">main container</div>
+   
+    <section class="section">
+        <article>
+            <h2>First article</h2>
+            <p>I recently had a problem where my logo would be would be cut off when I tried minimising my browser. That was easily solved by taking away margin-left{negative-value;} Now, my logo is positioned where I would like to move it to the left a few px but obviously don't want to use the above property and value. I tried margin-right which didn't seem to work. I also want to stay way from positioning and just focus on using normal flow. In the picture below you can see the</p>
+        </article>
+        <article>
+            <h2>second article</h2>
+            <p>All i want is to move the logo to the left a few px. so the background image of my home navigation isn't overlapping.</p>
+        </article>
+        <article>
+            <h2>Third article</h2>
+            <p>All i want is to move the logo to the left a few px. so the background image of my home navigation isn't overlapping.</p>
+        </article>
+    </section>
+   
+    
+    <sideBar class="sidebar-right"><div class="center"><p>right side Bar</p></div></sideBar>
+    <footer class="footer">Footer</footer>
+</body>
+</html>
